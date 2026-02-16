@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stix2nx"
+version = "0.1.0"
+description = "Convert STIX cyber threat intelligence bundles to NetworkX graphs"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Marlon Abayan", email = "mabayan@users.noreply.github.com" }
+]
+keywords = ["stix", "stix2", "networkx", "threat-intelligence", "cybersecurity", "mitre-attack", "cti"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "stix2>=3.0.0",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "requests>=2.28",
+    "matplotlib>=3.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/mabayan/stix2nx"
+Repository = "https://github.com/mabayan/stix2nx"
+Issues = "https://github.com/mabayan/stix2nx/issues"
