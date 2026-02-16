@@ -7,7 +7,7 @@ name = "stix2nx"
 version = "0.1.0"
 description = "Convert STIX cyber threat intelligence bundles to NetworkX graphs"
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
     { name = "Marlon Abayan", email = "mabayan@users.noreply.github.com" }
